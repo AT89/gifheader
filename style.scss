@@ -1,0 +1,47 @@
+* {
+-webkit-transition: 0.35s ease;
+transition: 0.35s ease;
+box-sizing: border-box;
+}
+
+
+
+$back-text-size: 10em;
+
+body {
+background: #222;
+}
+
+.center {
+position: absolute;
+margin: 0;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+width: 88%;
+}
+
+.repeat {
+position: absolute;
+margin: 0;
+top: 0%;
+left: 0
+}
+
+.back-text {
+font-family: Impact;
+font-size: $back-text-size;
+// line-height: $back-text-size;
+background: url("https://media.giphy.com/media/13RugVyTBro0F2/source.gif") no-repeat center;
+background-size: cover;
+// background-size: $back-text-size;
+-webkit-background-clip: text;
+-ms-background-clip: text;
+background-clip: text;
+color: #000;
+-webkit-text-fill-color: transparent;
+padding: 15px;
+width: 90%;
+max-width: 7*$back-text-size;
+}
